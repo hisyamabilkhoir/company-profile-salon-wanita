@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Beauty Studio — Your Beauty Sanctuary</title>
+  <meta name="description" content="Lumière Beauty Studio adalah ruang perawatan kecantikan eksklusif untuk wanita. Menghadirkan layanan Hair Care, Skin Care, Nail Art, Make Up, dan Hair Removal dengan sentuhan profesional.">
+  <meta name="keywords" content="salon wanita, beauty studio, hair care, skin care, nail art, makeup bandung, salon kecantikan, lumiere beauty studio">
+  <meta property="og:title" content="Lumière Beauty Studio — Your Beauty Sanctuary">
+  <meta property="og:description" content="More than a salon, we're a space for you to pause, be cared for, and feel like the best version of yourself.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@400;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css?v=20260913z11">
+  <link rel="stylesheet" href="./css/animations.css?v=20260913z11">
+
+  <style>
+    /* Instant enforcement for Before/After badges hiding */
+    .ba-container.hide-after .badge-after {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+    .ba-container.hide-before .badge-before {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+  </style>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Lumière Beauty Studio">
+        <span class="logo-main">LUMIÈRE</span>
+        <span class="logo-sub">BEAUTY STUDIO</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="btn btn-primary open-booking-modal" aria-label="Book Appointment">
+          Book Appointment
+        </button>
+        <button class="search-btn" aria-label="Search Services">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <span class="logo-main">LUMIÈRE</span>
+          <span class="logo-sub">BEAUTY STUDIO</span>
+        </div>
+        <button class="drawer-close-btn" aria-label="Tutup Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#home" class="nav-link">
+          <span>Home</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#about" class="nav-link">
+          <span>About</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#services" class="nav-link">
+          <span>Services</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#packages" class="nav-link">
+          <span>Packages</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#gallery" class="nav-link">
+          <span>Gallery</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#contact" class="nav-link">
+          <span>Contact</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </nav>
+    </div>
+    <div class="drawer-footer">
+      <button class="btn btn-primary open-booking-modal" style="width: 100%; justify-content: center;">
+        <span>Book Appointment</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+      <div class="drawer-contact-mini">
+        <a href="https://wa.me/6285973729267?text=Halo%20Lumi%C3%A8re%20Beauty%20Studio!%20Saya%20ingin%20tanya%20layanan%20salon." target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <span>+62 859 7372 9267</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. HERO SECTION & TRUST BAR (MOCKUP 1)
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <!-- Full-bleed background layer starting from top of page behind navbar -->
+    <div class="hero-bg-layer" id="hero-bg"></div>
+    <!-- Soft white/cream gradient on the left for maximum text elegance -->
+    <div class="hero-gradient-overlay"></div>
+
+    <div class="container hero-container">
+      <!-- Hero Left Content -->
+      <div class="hero-content reveal-left">
+        <span class="hero-tag">YOUR BEAUTY SANCTUARY</span>
+        <h1 class="hero-title">
+          Beauty<br>
+          Looks Better<br>
+          <em>Here</em>
+        </h1>
+        <p class="hero-desc">
+          More than a salon, we're a space for you to pause, be cared for, and feel like the best version of yourself.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#booking" class="btn btn-primary open-booking-modal">
+            Book an Appointment
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-outline">
+            Explore Services
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Right Floating Elements -->
+      <div class="hero-right-overlay">
+        <!-- Vertical Slider Pagination (Exact Mockup Match) -->
+        <div class="hero-slider-pagination vertical" aria-label="Hero Slide Pagination">
+          <div class="page-item active" data-slide="0">
+            <span class="page-num">01</span>
+            <span class="active-underline"></span>
+          </div>
+          <div class="v-divider"></div>
+          <div class="page-item" data-slide="1">
+            <span class="page-num">02</span>
+            <span class="active-underline"></span>
+          </div>
+          <div class="v-divider"></div>
+          <div class="page-item" data-slide="2">
+            <span class="page-num">03</span>
+            <span class="active-underline"></span>
+          </div>
+        </div>
+
+        <!-- Slider Navigation Arrows (Translucent Circular Outlines) -->
+        <div class="hero-nav-controls">
+          <button class="hero-arrow-btn hero-btn-prev" aria-label="Previous Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="hero-arrow-btn hero-btn-next" aria-label="Next Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features Bar -->
+  <div class="trust-bar-section">
+    <div class="container">
+      <div class="trust-bar-grid">
+        <!-- Item 1 -->
+        <div class="trust-item reveal stagger-1">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <span class="trust-label">Professional<br>Beauty Specialists</span>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="trust-item reveal stagger-2">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <span class="trust-label">Premium<br>Beauty Products</span>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="trust-item reveal stagger-3">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21a9 9 0 0 0 9-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 0 0 9 9z"></path>
+              <path d="M12 7v5l3 3"></path>
+            </svg>
+          </div>
+          <span class="trust-label">Relaxing<br>Atmosphere</span>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="trust-item reveal stagger-4">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <span class="trust-label">Personalized<br>Consultation</span>
+        </div>
+
+        <!-- Quote on right -->
+        <div class="trust-quote reveal stagger-5">
+          <span>Beauty Lives in the Little Details.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       3. ABOUT SECTION (MOCKUP)
+       ======================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- About Collage Left -->
+        <div class="about-collage-wrap reveal-left">
+          <div class="about-collage-grid">
+            <!-- 1. Main Large Arch Image (about-1.webp) -->
+            <div class="about-img-main">
+              <img src="./assets/images/about-1.webp" alt="Lumière Reception Sanctuary">
+              <div class="about-arch-script">
+                <span>A</span>
+                <span>Calm Space</span>
+                <span>A Brighter You</span>
+              </div>
+            </div>
+
+            <!-- Right Column with 2 stacked images -->
+            <div class="about-collage-right">
+              <!-- 2. Top-Right Image (about-2.webp) -->
+              <div class="about-tile about-tile-top">
+                <img src="./assets/images/about-2.webp" alt="Premium Products & Hair Tools">
+                <div class="about-tile-meta">
+                  <span class="tile-tag">PREMIUM<br>PRODUCTS</span>
+                  <span class="tile-dash"></span>
+                  <span class="tile-cursive">For Your<br>Best Care</span>
+                </div>
+              </div>
+
+              <!-- 3. Bottom-Right Image (about-3.webp) -->
+              <div class="about-tile about-tile-bottom">
+                <img src="./assets/images/about-3.webp" alt="Relaxing Hair Wash Treatment">
+                <div class="about-tile-meta">
+                  <span class="tile-tag">EXPERT CARE<br>REAL RESULTS</span>
+                  <span class="tile-dash"></span>
+                  <span class="tile-cursive">Because You<br>Deserve More</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Footer Line below Collage -->
+          <div class="about-collage-footer">
+            <span class="about-footer-brand">LUMIÈRE BEAUTY STUDIO</span>
+            <span class="about-footer-line"></span>
+          </div>
+        </div>
+
+        <!-- About Content Right -->
+        <div class="about-content reveal-right">
+          <!-- Top Header Row with Botanical Art and Circular Badge -->
+          <div class="about-header-row">
+            <div class="about-header-titles">
+              <span class="about-tag">ABOUT LUMIÈRE</span>
+              <h2 class="about-title">More Than<br>a <em class="title-salon">Salon</em></h2>
+            </div>
+
+            <!-- Botanical Line-Art SVG -->
+            <svg class="about-botanical-art" viewBox="0 0 160 140" fill="none" stroke="currentColor">
+              <path d="M20 130 C40 80, 80 40, 140 20 C100 60, 80 100, 20 130 Z" stroke-width="1.4"></path>
+              <path d="M50 95 C75 65, 105 35, 150 15 C130 45, 95 85, 50 95 Z" stroke-width="1.2"></path>
+              <path d="M20 130 C35 95, 55 60, 85 30 C75 60, 50 95, 20 130 Z" stroke-width="1.2"></path>
+              <path d="M20 130 L115 45" stroke-width="1.2"></path>
+            </svg>
+
+            <!-- Circular Quote Badge -->
+            <div class="about-quote-badge">
+              <span class="badge-row">BEAUTY</span>
+              <span class="badge-row">WELLNESS</span>
+              <span class="badge-row">CONFIDENCE</span>
+              <span class="badge-row">ALL IN ONE</span>
+              <span class="badge-row">SPACE</span>
+              <span class="badge-dash"></span>
+            </div>
+          </div>
+
+          <p class="about-desc">
+            We believe beauty is not about changing who you are, but about bringing out the best version of yourself. At Lumière Beauty Studio, we provide complete beauty experiences with expert care, premium products, and a space designed for your comfort.
+          </p>
+
+          <!-- 3 Value Features Row -->
+          <div class="about-values-row">
+            <div class="about-value-item">
+              <div class="about-value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 4 13C4 7 11 3 20 3c0 9-4 16-9 17Z"></path>
+                  <path d="M4 21c3.5-3.5 7-7 16-18"></path>
+                </svg>
+              </div>
+              <div class="about-value-text">
+                <span class="val-title">Premium</span>
+                <span class="val-sub">Products</span>
+              </div>
+            </div>
+
+            <div class="about-value-item">
+              <div class="about-value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="about-value-text">
+                <span class="val-title">Professional</span>
+                <span class="val-sub">& Certified Team</span>
+              </div>
+            </div>
+
+            <div class="about-value-item">
+              <div class="about-value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <div class="about-value-text">
+                <span class="val-title">A Relaxing</span>
+                <span class="val-sub">& Hygienic Space</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Counter Grid -->
+          <div class="about-stats-grid">
+            <div class="about-stat-item">
+              <span class="about-stat-num" data-count="8" data-suffix="+">8+</span>
+              <span class="about-stat-label">Years of<br>Experience</span>
+            </div>
+            <div class="about-stat-sep"></div>
+            <div class="about-stat-item">
+              <span class="about-stat-num" data-count="15" data-suffix="K+">15K+</span>
+              <span class="about-stat-label">Happy<br>Clients</span>
+            </div>
+            <div class="about-stat-sep"></div>
+            <div class="about-stat-item">
+              <span class="about-stat-num" data-count="12" data-suffix="">12</span>
+              <span class="about-stat-label">Beauty<br>Specialists</span>
+            </div>
+            <div class="about-stat-sep"></div>
+            <div class="about-stat-item">
+              <span class="about-stat-num" data-count="4.9" data-suffix="/5">4.9/5</span>
+              <span class="about-stat-label">Client<br>Rating</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action Row -->
+          <div class="about-action-row">
+            <a href="#about" class="btn-about-story open-booking-modal" aria-label="Our Story">
+              Our Story →
+            </a>
+            <div class="about-action-divider">
+              <span class="action-line"></span>
+              <span class="action-brand">BEAUTY LIVES HERE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom-Right Decorative Arch Patch from Mockup -->
+    <div class="about-corner-decor">
+      <div class="corner-arch-wrap">
+        <img src="./assets/images/about-corner-flower.webp" alt="Floral Sanctuary Accent">
+        <div class="corner-cursive-text">
+          <span>Care</span>
+          <span>Beauty</span>
+          <span>You</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. SERVICES SECTION (MOCKUP 3)
+       ======================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <!-- Header Grid with Title on Left & Pill Badge on Right -->
+      <div class="services-header-grid reveal">
+        <div class="services-header-left">
+          <div class="tag-with-line">
+            <span class="section-tag">OUR SERVICES</span>
+            <span class="tag-line"></span>
+          </div>
+          <h2 class="section-title">Beauty Care for <em>Every You</em></h2>
+          <p class="section-desc">
+            From hair to nails, from glowing skin to special occasion looks — we offer a complete range of beauty services designed to make you look and feel your best.
+          </p>
+        </div>
+        <div class="services-header-right">
+          <div class="services-header-pill">
+            <div class="pill-thumb">
+              <img src="./assets/images/services-pill-flower.webp" alt="Floral Sanctuary Vase Accent">
+            </div>
+            <div class="pill-text">
+              Self-Care<br>
+              Looks Good<br>
+              on You
+            </div>
+            <a href="#packages" class="pill-arrow-btn" aria-label="Explore Price List">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Service Cards Row -->
+      <div class="services-grid">
+        <!-- 1. Hair Care -->
+        <div class="service-card reveal stagger-1">
+          <div class="service-card-media">
+            <img src="./assets/images/service-hair-care.webp" alt="Lumière Hair Care">
+            <span class="service-media-num">01</span>
+            <div class="service-media-overlay">
+              <span class="service-media-quote">Healthy Hair<br>Happier You</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-header">
+              <div class="service-icon-circle">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                  <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                  <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-card-title">Hair Care</h3>
+                <span class="service-card-sub">Stronger, shinier, healthier hair</span>
+              </div>
+            </div>
+            <ul class="service-check-list">
+              <li><span class="check-pill">✓</span> Hair Cut</li>
+              <li><span class="check-pill">✓</span> Hair Coloring</li>
+              <li><span class="check-pill">✓</span> Hair Treatment</li>
+              <li><span class="check-pill">✓</span> Scalp Treatment</li>
+            </ul>
+            <div class="service-card-footer">
+              <div class="service-price-wrap">
+                <span class="service-price-label">From</span>
+                <div class="service-price-val">Rp 150.000</div>
+              </div>
+              <button class="service-book-btn open-booking-modal" data-service="Hair Care">
+                Book Now →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Skin Care -->
+        <div class="service-card reveal stagger-2">
+          <div class="service-card-media">
+            <img src="./assets/images/service-skin-care.webp" alt="Lumière Skin Care">
+            <span class="service-media-num">02</span>
+            <div class="service-media-overlay">
+              <span class="service-media-quote">Glowing Skin<br>Confident You</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-header">
+              <div class="service-icon-circle">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-card-title">Skin Care</h3>
+                <span class="service-card-sub">Reveal your natural glow</span>
+              </div>
+            </div>
+            <ul class="service-check-list">
+              <li><span class="check-pill">✓</span> Facial Treatment</li>
+              <li><span class="check-pill">✓</span> Acne Care</li>
+              <li><span class="check-pill">✓</span> Brightening Treatment</li>
+              <li><span class="check-pill">✓</span> Anti Aging</li>
+            </ul>
+            <div class="service-card-footer">
+              <div class="service-price-wrap">
+                <span class="service-price-label">From</span>
+                <div class="service-price-val">Rp 200.000</div>
+              </div>
+              <button class="service-book-btn open-booking-modal" data-service="Skin Care">
+                Book Now →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Nail Care -->
+        <div class="service-card reveal stagger-3">
+          <div class="service-card-media">
+            <img src="./assets/images/service-nail-care.webp" alt="Lumière Nail Care">
+            <span class="service-media-num">03</span>
+            <div class="service-media-overlay">
+              <span class="service-media-quote">Little Details<br>Make a Big Difference</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-header">
+              <div class="service-icon-circle">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 2h4v5h-4z"></path>
+                  <rect x="7" y="7" width="10" height="15" rx="3"></rect>
+                  <path d="M10 12h4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-card-title">Nail Care</h3>
+                <span class="service-card-sub">Beautiful nails, always</span>
+              </div>
+            </div>
+            <ul class="service-check-list">
+              <li><span class="check-pill">✓</span> Manicure</li>
+              <li><span class="check-pill">✓</span> Pedicure</li>
+              <li><span class="check-pill">✓</span> Nail Art</li>
+              <li><span class="check-pill">✓</span> Nail Treatment</li>
+            </ul>
+            <div class="service-card-footer">
+              <div class="service-price-wrap">
+                <span class="service-price-label">From</span>
+                <div class="service-price-val">Rp 150.000</div>
+              </div>
+              <button class="service-book-btn open-booking-modal" data-service="Nail Care">
+                Book Now →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Make Up -->
+        <div class="service-card reveal stagger-4">
+          <div class="service-card-media">
+            <img src="./assets/images/service-make-up.webp" alt="Lumière Make Up">
+            <span class="service-media-num">04</span>
+            <div class="service-media-overlay">
+              <span class="service-media-quote">More Than Makeup<br>It's Confidence</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-header">
+              <div class="service-icon-circle">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m14 4 6 6"></path>
+                  <path d="m18 10-9 9a2.83 2.83 0 0 1-4-4l9-9"></path>
+                  <circle cx="5" cy="19" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-card-title">Make Up</h3>
+                <span class="service-card-sub">For your everyday and every special moment</span>
+              </div>
+            </div>
+            <ul class="service-check-list">
+              <li><span class="check-pill">✓</span> Daily Make Up</li>
+              <li><span class="check-pill">✓</span> Party Make Up</li>
+              <li><span class="check-pill">✓</span> Bridal Make Up</li>
+              <li><span class="check-pill">✓</span> Make Up Class</li>
+            </ul>
+            <div class="service-card-footer">
+              <div class="service-price-wrap">
+                <span class="service-price-label">From</span>
+                <div class="service-price-val">Rp 150.000</div>
+              </div>
+              <button class="service-book-btn open-booking-modal" data-service="Make Up">
+                Book Now →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Hair Removal -->
+        <div class="service-card reveal stagger-5">
+          <div class="service-card-media">
+            <img src="./assets/images/service-hair-removal.webp" alt="Lumière Hair Removal">
+            <span class="service-media-num">05</span>
+            <div class="service-media-overlay">
+              <span class="service-media-quote">Smooth Skin<br>Greater Confidence</span>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-header">
+              <div class="service-icon-circle">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                  <line x1="16" y1="8" x2="2" y2="22"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="service-card-title">Hair Removal</h3>
+                <span class="service-card-sub">Smooth, clean, and carefree</span>
+              </div>
+            </div>
+            <ul class="service-check-list">
+              <li><span class="check-pill">✓</span> Waxing</li>
+              <li><span class="check-pill">✓</span> Laser Hair Removal</li>
+              <li><span class="check-pill">✓</span> Threading</li>
+              <li><span class="check-pill">✓</span> Intimate Care</li>
+            </ul>
+            <div class="service-card-footer">
+              <div class="service-price-wrap">
+                <span class="service-price-label">From</span>
+                <div class="service-price-val">Rp 300.000</div>
+              </div>
+              <button class="service-book-btn open-booking-modal" data-service="Hair Removal">
+                Book Now →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Decorative Divider Line from Mockup -->
+      <div class="services-bottom-decor reveal">
+        <span class="decor-tag">BEAUTY TODAY</span>
+        <div class="decor-line-wrap">
+          <span class="decor-line"></span>
+          <span class="decor-sparkle">✦</span>
+          <span class="decor-line"></span>
+        </div>
+        <span class="decor-tag">A BRIGHTER TOMORROW</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. PRICE LIST SECTION (MOCKUP 3)
+       ======================================================================== -->
+  <section class="pricelist-section" id="packages">
+    <div class="container">
+      <div class="pricelist-grid">
+        <!-- Left Introduction -->
+        <div class="pricelist-intro reveal-left">
+          <div class="tag-with-line">
+            <span class="section-tag">OUR PRICE LIST</span>
+            <span class="tag-line"></span>
+          </div>
+          <h2 class="section-title">Transparent<br>Prices, No Surprises</h2>
+          <p class="section-desc">
+            Quality beauty care with clear pricing, designed for your convenience. Enjoy premium services with trusted products, certified professionals, and a comfortable atmosphere.
+          </p>
+
+          <!-- 3 Trust Points in a Row -->
+          <div class="price-features-row">
+            <div class="price-feature-item">
+              <div class="price-feature-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 4 13C4 7 11 2 20 2c0 9-5 16-11 18h2"></path>
+                  <path d="m7 17 8-8"></path>
+                </svg>
+              </div>
+              <div class="price-feature-text">
+                <span>Premium</span>
+                <span>Products</span>
+              </div>
+            </div>
+            <div class="price-feature-sep"></div>
+            <div class="price-feature-item">
+              <div class="price-feature-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="price-feature-text">
+                <span>Certified</span>
+                <span>Professionals</span>
+              </div>
+            </div>
+            <div class="price-feature-sep"></div>
+            <div class="price-feature-item">
+              <div class="price-feature-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <div class="price-feature-text">
+                <span>Safe &amp;</span>
+                <span>Hygienic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button & Disclaimer -->
+          <div class="pricelist-cta-wrap">
+            <button class="btn-pricelist-cta open-booking-modal" aria-label="View Full Price List">
+              View Full Price List →
+            </button>
+            <p class="pricelist-disclaimer">* Prices may vary depending on hair length &amp; treatment.</p>
+          </div>
+
+          <!-- Bottom Left Arch Image & Badge -->
+          <div class="pricelist-bottom-visual">
+            <div class="pricelist-arch-img">
+              <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=800&auto=format&fit=crop" alt="Lumière Beauty Sanctuary Arch Mirror" onerror="this.src='assets/images/hero-lumiere.jpg'">
+              <div class="arch-mirror-quote">
+                <span>Good</span>
+                <span>Hair</span>
+                <span>Brighter</span>
+                <span>Days</span>
+              </div>
+            </div>
+            <div class="pricelist-detail-badge">
+              <span class="badge-sub">BEAUTY</span>
+              <span class="badge-sub">IN EVERY</span>
+              <span class="badge-cursive">detail</span>
+              <span class="badge-line"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Tabbed Price Table -->
+        <div class="pricelist-container reveal-right">
+          <!-- Filter Tabs -->
+          <div class="pricelist-tabs-wrap">
+            <div class="pricelist-tabs" role="tablist">
+              <button class="price-tab-btn active" data-category="hair" role="tab" aria-selected="true">Hair</button>
+              <button class="price-tab-btn" data-category="skin" role="tab" aria-selected="false">Skin</button>
+              <button class="price-tab-btn" data-category="nails" role="tab" aria-selected="false">Nails</button>
+              <button class="price-tab-btn" data-category="makeup" role="tab" aria-selected="false">Make Up</button>
+              <button class="price-tab-btn" data-category="removal" role="tab" aria-selected="false">Hair Removal</button>
+            </div>
+          </div>
+
+          <!-- Main White Card Container -->
+          <div class="pricelist-content-wrap">
+            <div class="pricelist-items price-content-fade">
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Hair Cut (Women)</span>
+                  </div>
+                  <span class="price-item-desc">Precision cut &amp; styling for your best look</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 150.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Hair Cut (Women)" aria-label="Book Hair Cut (Women)">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Hair Coloring &amp; Balayage</span>
+                    <span class="price-badge-pill">MOST LOVED</span>
+                  </div>
+                  <span class="price-item-desc">Customized color, balayage &amp; professional finish</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 450.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Hair Coloring & Balayage" aria-label="Book Hair Coloring & Balayage">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Keratin Hair Treatment</span>
+                  </div>
+                  <span class="price-item-desc">Smoother, shinier, healthier hair</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 250.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Keratin Hair Treatment" aria-label="Book Keratin Hair Treatment">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Blow Out &amp; Hair Styling</span>
+                  </div>
+                  <span class="price-item-desc">Perfect styling for any occasion</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 200.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Blow Out & Hair Styling" aria-label="Book Blow Out & Hair Styling">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Detox Scalp Spa Treatment</span>
+                  </div>
+                  <span class="price-item-desc">Refresh your scalp, healthier hair</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 200.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Detox Scalp Spa Treatment" aria-label="Book Detox Scalp Spa Treatment">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="price-row">
+                <div class="price-item-info">
+                  <div class="price-item-title-wrap">
+                    <span class="price-item-name">Korean Wave Perm</span>
+                  </div>
+                  <span class="price-item-desc">Natural and long-lasting waves</span>
+                </div>
+                <div class="price-item-action">
+                  <span class="price-item-cost">Rp 550.000</span>
+                  <button class="price-row-btn open-booking-modal" data-service="Korean Wave Perm" aria-label="Book Korean Wave Perm">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column Card with Photo & Quote -->
+            <div class="pricelist-side-card">
+              <img src="./assets/images/service-hair-care.webp" alt="Lumière Hair Styling Detail" onerror="this.src='assets/images/hero-lumiere.jpg'">
+              <div class="pricelist-side-overlay">
+                <div class="side-card-quote">
+                  <em>Healthy Hair</em>
+                  <em>Happier You</em>
+                </div>
+                <div class="side-card-divider"></div>
+                <div class="side-card-tag">
+                  MORE THAN A SALON<br>
+                  A BETTER YOU
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Decorative Divider Line from Mockup -->
+      <div class="pricelist-bottom-decor reveal">
+        <span class="decor-brand">LUMIÈRE</span>
+        <div class="decor-line-wrap">
+          <span class="decor-line"></span>
+          <span class="decor-cursive">Self Care Looks Good on You</span>
+          <span class="decor-line"></span>
+        </div>
+        <span class="decor-brand">BEAUTY STUDIO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. TRANSFORMATIONS / REAL RESULTS (MOCKUP 4)
+       ======================================================================== -->
+  <section class="transformations-section" id="results">
+    <!-- Soft Botanical Leaf Shadow Overlay -->
+    <div class="trans-shadow-decor" aria-hidden="true">
+      <svg width="260" height="440" viewBox="0 0 260 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-20 20 C 40 70, 80 140, 110 220 C 130 280, 140 340, 150 420" stroke="rgba(90, 65, 55, 0.18)" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="60" cy="90" rx="42" ry="16" transform="rotate(-35 60 90)" fill="rgba(90, 65, 55, 0.14)"/>
+        <ellipse cx="105" cy="150" rx="50" ry="18" transform="rotate(-25 105 150)" fill="rgba(90, 65, 55, 0.12)"/>
+        <ellipse cx="25" cy="140" rx="44" ry="16" transform="rotate(30 25 140)" fill="rgba(90, 65, 55, 0.13)"/>
+        <ellipse cx="130" cy="230" rx="54" ry="20" transform="rotate(-15 130 230)" fill="rgba(90, 65, 55, 0.11)"/>
+        <ellipse cx="65" cy="240" rx="46" ry="17" transform="rotate(35 65 240)" fill="rgba(90, 65, 55, 0.12)"/>
+        <ellipse cx="145" cy="320" rx="56" ry="20" transform="rotate(-10 145 320)" fill="rgba(90, 65, 55, 0.10)"/>
+        <ellipse cx="90" cy="330" rx="48" ry="18" transform="rotate(25 90 330)" fill="rgba(90, 65, 55, 0.11)"/>
+      </svg>
+    </div>
+
+    <!-- Decorative bottom-left patch from mockup -->
+    <div class="trans-decor-badge">
+      <span>Beauty<br>Lives In<br>Confidence</span>
+    </div>
+
+    <div class="container">
+      <div class="trans-header-grid reveal">
+        <!-- Left: Tag & Title -->
+        <div class="trans-title-col">
+          <div class="tag-with-line">
+            <span class="section-tag">REAL RESULTS</span>
+            <span class="tag-line"></span>
+          </div>
+          <h2 class="section-title">
+            Transformations<br>
+            <em>You Can See</em>
+          </h2>
+        </div>
+
+        <!-- Center: Description -->
+        <div class="trans-desc-col">
+          <p class="section-desc">
+            Real people. Real results. Here are some of our lovely clients' transformations. Because beauty isn't just a service, it's a confidence boost.
+          </p>
+        </div>
+
+        <!-- Right: Script Accent -->
+        <div class="trans-nav-col">
+          <div class="trans-script-wrap">
+            <span class="trans-script">Real Women<br>Real Confidence</span>
+            <svg class="trans-script-curve" width="90" height="20" viewBox="0 0 100 24" fill="none">
+              <path d="M5 18 C 35 22, 65 14, 95 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Transformation Split Cards -->
+      <div class="transformations-grid">
+        <!-- 1. Hair Coloring -->
+        <div class="transformation-card reveal stagger-1">
+          <div class="ba-container" title="Drag left / right to compare">
+            <!-- After (Background) -->
+            <div class="ba-image ba-after">
+              <img src="./assets/images/trans-hair-after.webp" alt="Hair Coloring After">
+            </div>
+            <!-- Before (Clipped overlay) -->
+            <div class="ba-before">
+              <img src="./assets/images/trans-hair-before.webp" alt="Hair Coloring Before">
+            </div>
+            <!-- Draggable handle -->
+            <div class="ba-handle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 16 4 12 8 8"></polyline>
+                <polyline points="16 8 20 12 16 16"></polyline>
+              </svg>
+            </div>
+            <!-- Dynamic Badges -->
+            <span class="ba-badge badge-before">Before</span>
+            <span class="ba-badge badge-after">After</span>
+          </div>
+          <div class="trans-card-header">
+            <div class="trans-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="trans-card-titles">
+              <h3 class="trans-card-name">Hair Coloring</h3>
+              <span class="trans-card-sub">Brighter color, healthier hair.</span>
+            </div>
+          </div>
+          <div class="trans-card-quote">
+            <p>“My hair feels so much more alive! The color is beautiful and doesn't damage my hair at all.”</p>
+            <span class="trans-author">— Sarah, Client</span>
+          </div>
+        </div>
+
+        <!-- 2. Acne Treatment -->
+        <div class="transformation-card reveal stagger-2">
+          <div class="ba-container" title="Drag left / right to compare">
+            <div class="ba-image ba-after">
+              <img src="./assets/images/trans-acne-after.webp" alt="Acne Treatment After">
+            </div>
+            <div class="ba-before">
+              <img src="./assets/images/trans-acne-before.webp" alt="Acne Treatment Before">
+            </div>
+            <div class="ba-handle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 16 4 12 8 8"></polyline>
+                <polyline points="16 8 20 12 16 16"></polyline>
+              </svg>
+            </div>
+            <!-- Dynamic Badges -->
+            <span class="ba-badge badge-before">Before</span>
+            <span class="ba-badge badge-after">After</span>
+          </div>
+          <div class="trans-card-header">
+            <div class="trans-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                <circle cx="12" cy="14" r="3"></circle>
+              </svg>
+            </div>
+            <div class="trans-card-titles">
+              <h3 class="trans-card-name">Acne Treatment</h3>
+              <span class="trans-card-sub">Clearer skin, brighter you.</span>
+            </div>
+          </div>
+          <div class="trans-card-quote">
+            <p>“Setelah treatment rutin, kulitku jauh lebih bersih dan glowing. Terima kasih!”</p>
+            <span class="trans-author">— Citra, Client</span>
+          </div>
+        </div>
+
+        <!-- 3. Nail Art -->
+        <div class="transformation-card reveal stagger-3">
+          <div class="ba-container" title="Drag left / right to compare">
+            <div class="ba-image ba-after">
+              <img src="./assets/images/trans-nails-after.webp" alt="Nail Art After">
+            </div>
+            <div class="ba-before">
+              <img src="./assets/images/trans-nails-before.webp" alt="Nail Art Before">
+            </div>
+            <div class="ba-handle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 16 4 12 8 8"></polyline>
+                <polyline points="16 8 20 12 16 16"></polyline>
+              </svg>
+            </div>
+            <!-- Dynamic Badges -->
+            <span class="ba-badge badge-before">Before</span>
+            <span class="ba-badge badge-after">After</span>
+          </div>
+          <div class="trans-card-header">
+            <div class="trans-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7"></path>
+                <path d="M14 2v7"></path>
+                <rect x="7" y="9" width="10" height="13" rx="3"></rect>
+              </svg>
+            </div>
+            <div class="trans-card-titles">
+              <h3 class="trans-card-name">Nail Art</h3>
+              <span class="trans-card-sub">Details make the difference.</span>
+            </div>
+          </div>
+          <div class="trans-card-quote">
+            <p>“Nail art-nya super rapi dan tahan lama! Banyak yang compliment.”</p>
+            <span class="trans-author">— Melissa, Client</span>
+          </div>
+        </div>
+
+        <!-- 4. Make Up -->
+        <div class="transformation-card reveal stagger-4">
+          <div class="ba-container" title="Drag left / right to compare">
+            <div class="ba-image ba-after">
+              <img src="./assets/images/trans-makeup-after.webp" alt="Make Up After">
+            </div>
+            <div class="ba-before">
+              <img src="./assets/images/trans-makeup-before.webp" alt="Make Up Before">
+            </div>
+            <div class="ba-handle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 16 4 12 8 8"></polyline>
+                <polyline points="16 8 20 12 16 16"></polyline>
+              </svg>
+            </div>
+            <!-- Dynamic Badges -->
+            <span class="ba-badge badge-before">Before</span>
+            <span class="ba-badge badge-after">After</span>
+          </div>
+          <div class="trans-card-header">
+            <div class="trans-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="5"></circle>
+                <path d="M20 21a8 8 0 0 0-16 0"></path>
+              </svg>
+            </div>
+            <div class="trans-card-titles">
+              <h3 class="trans-card-name">Make Up</h3>
+              <span class="trans-card-sub">A more confident you.</span>
+            </div>
+          </div>
+          <div class="trans-card-quote">
+            <p>“Hasil make up-nya flawless dan tetap terlihat natural. Cocok banget untuk acara spesial!”</p>
+            <span class="trans-author">— Della, Client</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom View More Link -->
+      <div class="trans-bottom-bar reveal" style="justify-content: flex-end;">
+        <a href="#booking" class="trans-more-link open-booking-modal">
+          View More Transformations
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. CLIENT STORIES / TESTIMONIALS (MOCKUP)
+       ======================================================================== -->
+  <section class="testimonials-section" id="stories">
+    <div class="container">
+      <!-- Section Header with Visual Capsule & Quote Badge -->
+      <div class="stories-header-flex reveal">
+        <div class="stories-header-left">
+          <span class="stories-tag">CLIENT STORIES</span>
+          <h2 class="section-title">Loved By Women<br>Like <em class="title-you">You</em></h2>
+          <p class="section-desc">
+            Real stories from our clients who trust us with their beauty journey.<br>
+            Because your satisfaction means everything to us.
+          </p>
+        </div>
+
+        <div class="stories-header-right">
+          <!-- Overlapping Circular Quote Badge -->
+          <div class="stories-quote-badge">
+            <span class="badge-row">REAL</span>
+            <span class="badge-row">PEOPLE</span>
+            <span class="badge-row">REAL</span>
+            <span class="badge-row">BEAUTY</span>
+            <span class="badge-dash"></span>
+          </div>
+
+          <!-- Arch Mirror Visual Capsule -->
+          <div class="stories-header-capsule">
+            <img src="./assets/images/salon-interior.jpg" alt="Good Hair Brighter Days Mirror" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <div class="capsule-mirror-quote">
+              <span>Good</span>
+              <span>Hair</span>
+              <span>Brighter</span>
+              <span>Days</span>
+              <span class="mirror-quote-line"></span>
+            </div>
+          </div>
+
+          <!-- CTA Pill Button: See More Stories → -->
+          <a href="#booking" class="btn-stories-more open-booking-modal" aria-label="See More Stories">
+            See More Stories →
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 Testimonial Cards Grid -->
+      <div class="stories-grid">
+        <!-- 1. Amanda -->
+        <div class="story-card reveal stagger-1">
+          <div class="story-card-media">
+            <img src="./assets/images/client-amanda.jpg" alt="Amanda Client Portrait" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop'">
+          </div>
+          <div class="story-card-body">
+            <div class="story-quote-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="story-card-quote">
+              “The service was amazing!<br>My hair feels so much healthier and the staff are super friendly.”
+            </p>
+            <div class="story-divider-line"></div>
+            <div class="story-author-row">
+              <div class="story-author-info">
+                <h4 class="story-author-name">Amanda</h4>
+                <span class="story-author-role">Client</span>
+              </div>
+              <div class="story-stars" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Citra -->
+        <div class="story-card reveal stagger-2">
+          <div class="story-card-media">
+            <img src="./assets/images/client-citra.jpg" alt="Citra Client Portrait" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&auto=format&fit=crop'">
+          </div>
+          <div class="story-card-body">
+            <div class="story-quote-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="story-card-quote">
+              “Best facial treatment ever!<br>My skin looks brighter and smoother in just a few sessions.”
+            </p>
+            <div class="story-divider-line"></div>
+            <div class="story-author-row">
+              <div class="story-author-info">
+                <h4 class="story-author-name">Citra</h4>
+                <span class="story-author-role">Client</span>
+              </div>
+              <div class="story-stars" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Delia -->
+        <div class="story-card reveal stagger-3">
+          <div class="story-card-media">
+            <img src="./assets/images/client-delia.jpg" alt="Delia Client Portrait" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop'">
+          </div>
+          <div class="story-card-body">
+            <div class="story-quote-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="story-card-quote">
+              “I always do my nails here.<br>The result is always perfect and long-lasting!”
+            </p>
+            <div class="story-divider-line"></div>
+            <div class="story-author-row">
+              <div class="story-author-info">
+                <h4 class="story-author-name">Delia</h4>
+                <span class="story-author-role">Client</span>
+              </div>
+              <div class="story-stars" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Decorative Divider Line from Mockup -->
+      <div class="stories-bottom-decor reveal">
+        <span class="decor-brand">BEAUTY LIVES</span>
+        <div class="decor-line-wrap">
+          <span class="decor-line"></span>
+          <span class="decor-sparkle">✦</span>
+          <span class="decor-line"></span>
+        </div>
+        <span class="decor-brand">IN EVERY STORY</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. OUR SPACE / GALLERY (MOCKUP 4)
+       ======================================================================== -->
+  <section class="space-section" id="gallery">
+    <div class="container">
+      <!-- Space Section Header -->
+      <div class="space-header-flex reveal">
+        <div class="space-header-left">
+          <span class="space-tag">OUR SPACE</span>
+          <h2 class="section-title">A Place to<br>Unwind &amp; <em class="title-glow">Glow</em></h2>
+          <p class="section-desc">
+            Step into a serene and stylish space, designed for your comfort, beauty, and well-being.
+          </p>
+        </div>
+
+        <div class="space-header-right">
+          <div class="space-header-note">
+            <p>
+              More than just a salon, it's your personal retreat. A space where beauty meets relaxation.
+            </p>
+            <a href="#gallery" class="btn-space-gallery open-booking-modal" aria-label="View Gallery">
+              View Gallery →
+            </a>
+          </div>
+
+          <!-- Circular Space Badge -->
+          <div class="space-quote-badge">
+            <span class="badge-row">BEAUTY</span>
+            <span class="badge-row">HAPPENS</span>
+            <span class="badge-row">IN A FEEL-GOOD</span>
+            <span class="badge-row">SPACE</span>
+            <span class="badge-dash"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Space Cards Grid -->
+      <div class="space-grid">
+        <!-- 01. Our Salon -->
+        <div class="space-card reveal stagger-1">
+          <img src="./assets/images/space-our-salon.webp" alt="Lumière Our Salon Reception & Lounge" onerror="this.src='assets/images/hero-lumiere.jpg'">
+          <div class="space-card-overlay">
+            <div class="space-card-content">
+              <div class="space-card-meta">
+                <span class="space-num">01</span>
+                <span class="space-num-line"></span>
+              </div>
+              <h3 class="space-card-title">Our Salon</h3>
+              <p class="space-card-sub">A WARM WELCOME TO YOUR BEAUTY JOURNEY</p>
+            </div>
+            <button class="space-arrow-btn open-booking-modal" data-service="Hair Care" aria-label="Explore Our Salon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 02. Our Tools -->
+        <div class="space-card reveal stagger-2">
+          <img src="./assets/images/space-our-tools.webp" alt="Lumière Our Tools & Premium Products" onerror="this.src='assets/images/hero-lumiere.jpg'">
+          <div class="space-card-overlay">
+            <div class="space-card-content">
+              <div class="space-card-meta">
+                <span class="space-num">02</span>
+                <span class="space-num-line"></span>
+              </div>
+              <h3 class="space-card-title">Our Tools</h3>
+              <p class="space-card-sub">PREMIUM PRODUCTS FOR THE BEST RESULTS</p>
+            </div>
+            <button class="space-arrow-btn open-booking-modal" data-service="Skin Care" aria-label="Explore Our Tools">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 03. Styling Area -->
+        <div class="space-card reveal stagger-3">
+          <img src="./assets/images/space-styling-area.webp" alt="Lumière Styling Area Stations" onerror="this.src='assets/images/hero-lumiere.jpg'">
+          <div class="space-card-overlay">
+            <div class="space-card-content">
+              <div class="space-card-meta">
+                <span class="space-num">03</span>
+                <span class="space-num-line"></span>
+              </div>
+              <h3 class="space-card-title">Styling Area</h3>
+              <p class="space-card-sub">DESIGNED FOR YOUR COMFORT</p>
+            </div>
+            <button class="space-arrow-btn open-booking-modal" data-service="Hair Care" aria-label="Explore Styling Area">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 04. Relax & Refresh -->
+        <div class="space-card reveal stagger-4">
+          <img src="./assets/images/space-relax-refresh.webp" alt="Lumière Relax & Refresh Hair Sanctuary" onerror="this.src='assets/images/hero-lumiere.jpg'">
+          <div class="space-card-overlay">
+            <div class="space-card-content">
+              <div class="space-card-meta">
+                <span class="space-num">04</span>
+                <span class="space-num-line"></span>
+              </div>
+              <h3 class="space-card-title">Relax &amp; Refresh</h3>
+              <p class="space-card-sub">BECAUSE YOU DESERVE A LITTLE ME TIME</p>
+            </div>
+            <button class="space-arrow-btn open-booking-modal" data-service="Hair Care" aria-label="Explore Relax & Refresh">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Decorative Divider Line from Mockup -->
+      <div class="space-bottom-decor reveal">
+        <span class="decor-brand">BEAUTY LIVES HERE</span>
+        <div class="decor-line-wrap">
+          <span class="decor-line"></span>
+          <span class="decor-cursive">Self Care Looks Good on You</span>
+          <span class="decor-line"></span>
+        </div>
+        <span class="decor-brand">NATURAL • CONFIDENT • YOU</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. MEET OUR EXPERTS (MOCKUP 4)
+       ======================================================================== -->
+  <section class="team-section" id="experts">
+    <div class="container">
+      <!-- Section Header with Visual Capsule & Quote Badge -->
+      <div class="team-header-flex reveal">
+        <div class="team-header-left">
+          <div class="tag-with-line">
+            <span class="section-tag">MEET OUR EXPERTS</span>
+          </div>
+          <h2 class="section-title">The Artists Behind<br>Your <em class="title-beauty">Beauty</em></h2>
+          <p class="section-desc">
+            Our professional team is here to give you the best care and personalized experience.
+          </p>
+        </div>
+
+        <div class="team-header-right">
+          <!-- Arch Mirror & Flowers Visual Capsule -->
+          <div class="team-header-capsule">
+            <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=600&auto=format&fit=crop" alt="Beauty Sanctuary Mirror" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <div class="capsule-mirror-quote">
+              <span>Beauty</span>
+              <span>People</span>
+              <span>Brighter</span>
+              <span>Days</span>
+            </div>
+          </div>
+
+          <!-- Overlapping Circular Quote Badge -->
+          <div class="team-quote-badge">
+            <span class="badge-row">GREAT</span>
+            <span class="badge-row">BEAUTY</span>
+            <span class="badge-row">COMES FROM</span>
+            <span class="badge-row">GREAT</span>
+            <span class="badge-row">PEOPLE</span>
+            <span class="badge-accent-line"></span>
+          </div>
+
+          <!-- Slider Navigation Arrows -->
+          <div class="team-nav-arrows">
+            <button class="team-nav-btn team-prev-btn" aria-label="Previous Specialist">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button class="team-nav-btn team-next-btn" aria-label="Next Specialist">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Specialist Cards Grid -->
+      <div class="team-grid">
+        <!-- 1. Nadia Putri -->
+        <div class="team-card reveal stagger-1">
+          <div class="team-card-media">
+            <div class="team-media-arch-bg"></div>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" alt="Nadia Putri Senior Hair Stylist" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <span class="team-specialist-tag">HAIR<br>SPECIALIST</span>
+            <div class="team-card-quote">
+              <em>Good</em>
+              <em>Hair</em>
+              <em>Brighter</em>
+              <em>You</em>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <div class="team-name-row">
+              <div class="team-name-info">
+                <h3 class="team-name">Nadia Putri</h3>
+                <span class="team-role">Senior Hair Stylist</span>
+              </div>
+              <div class="team-exp-badge">
+                <span class="exp-val">6+</span>
+                <span class="exp-label">Years<br>Experience</span>
+              </div>
+            </div>
+            <p class="team-bio">
+              Specialized in modern cuts, coloring, and hair treatments to bring out your best look.
+            </p>
+            <div class="team-expertise-wrap">
+              <span class="team-expertise-label">Expertise</span>
+              <div class="team-expertise-pills">
+                <span class="exp-pill">Hair Cut</span>
+                <span class="exp-pill">Hair Coloring</span>
+                <span class="exp-pill">Hair Treatment</span>
+                <span class="exp-pill">Scalp Care</span>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <button class="btn-team-profile open-booking-modal" data-service="Hair Care" data-specialist="Nadia Putri">
+                View Profile →
+              </button>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-team-social" aria-label="Instagram Nadia Putri">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Alya Rahma -->
+        <div class="team-card reveal stagger-2">
+          <div class="team-card-media">
+            <div class="team-media-arch-bg"></div>
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop" alt="Alya Rahma Beauty Specialist" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <span class="team-specialist-tag">SKIN<br>SPECIALIST</span>
+            <div class="team-card-quote">
+              <em>Healthy</em>
+              <em>Skin</em>
+              <em>Happier</em>
+              <em>You</em>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <div class="team-name-row">
+              <div class="team-name-info">
+                <h3 class="team-name">Alya Rahma</h3>
+                <span class="team-role">Beauty Specialist</span>
+              </div>
+              <div class="team-exp-badge">
+                <span class="exp-val">5+</span>
+                <span class="exp-label">Years<br>Experience</span>
+              </div>
+            </div>
+            <p class="team-bio">
+              Passionate about healthy skin and personalized skincare solutions for every skin type.
+            </p>
+            <div class="team-expertise-wrap">
+              <span class="team-expertise-label">Expertise</span>
+              <div class="team-expertise-pills">
+                <span class="exp-pill">Facial Treatment</span>
+                <span class="exp-pill">Acne Care</span>
+                <span class="exp-pill">Brightening</span>
+                <span class="exp-pill">Anti Aging</span>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <button class="btn-team-profile open-booking-modal" data-service="Skin Care" data-specialist="Alya Rahma">
+                View Profile →
+              </button>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-team-social" aria-label="Instagram Alya Rahma">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Sabrina -->
+        <div class="team-card reveal stagger-3">
+          <div class="team-card-media">
+            <div class="team-media-arch-bg"></div>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="Sabrina Makeup Artist" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <span class="team-specialist-tag">MAKEUP<br>ARTIST</span>
+            <div class="team-card-quote quote-warm">
+              <em>Makeup</em>
+              <em>for Your</em>
+              <em>Moments</em>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <div class="team-name-row">
+              <div class="team-name-info">
+                <h3 class="team-name">Sabrina</h3>
+                <span class="team-role">Makeup Artist</span>
+              </div>
+              <div class="team-exp-badge">
+                <span class="exp-val">4+</span>
+                <span class="exp-label">Years<br>Experience</span>
+              </div>
+            </div>
+            <p class="team-bio">
+              Creating effortless, long-lasting looks for your everyday and special moments.
+            </p>
+            <div class="team-expertise-wrap">
+              <span class="team-expertise-label">Expertise</span>
+              <div class="team-expertise-pills">
+                <span class="exp-pill">Daily Makeup</span>
+                <span class="exp-pill">Bridal Makeup</span>
+                <span class="exp-pill">Party Makeup</span>
+                <span class="exp-pill">Makeup Class</span>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <button class="btn-team-profile open-booking-modal" data-service="Make Up" data-specialist="Sabrina">
+                View Profile →
+              </button>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-team-social" aria-label="Instagram Sabrina">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Dewi Lestari -->
+        <div class="team-card reveal stagger-4">
+          <div class="team-card-media">
+            <div class="team-media-arch-bg"></div>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop" alt="Dewi Lestari Nail Artist" onerror="this.src='assets/images/hero-lumiere.jpg'">
+            <span class="team-specialist-tag">NAIL<br>ARTIST</span>
+            <div class="team-card-quote">
+              <em>Small</em>
+              <em>Details</em>
+              <em>Big</em>
+              <em>Confidence</em>
+            </div>
+          </div>
+          <div class="team-card-body">
+            <div class="team-name-row">
+              <div class="team-name-info">
+                <h3 class="team-name">Dewi Lestari</h3>
+                <span class="team-role">Nail Artist</span>
+              </div>
+              <div class="team-exp-badge">
+                <span class="exp-val">5+</span>
+                <span class="exp-label">Years<br>Experience</span>
+              </div>
+            </div>
+            <p class="team-bio">
+              Detail-oriented nail care with creative designs and a focus on healthy nails.
+            </p>
+            <div class="team-expertise-wrap">
+              <span class="team-expertise-label">Expertise</span>
+              <div class="team-expertise-pills">
+                <span class="exp-pill">Manicure</span>
+                <span class="exp-pill">Pedicure</span>
+                <span class="exp-pill">Nail Art</span>
+                <span class="exp-pill">Nail Treatment</span>
+              </div>
+            </div>
+            <div class="team-card-footer">
+              <button class="btn-team-profile open-booking-modal" data-service="Nail Care" data-specialist="Dewi Lestari">
+                View Profile →
+              </button>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-team-social" aria-label="Instagram Dewi Lestari">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Decorative Divider Line from Mockup -->
+      <div class="team-bottom-decor reveal">
+        <span class="decor-brand">BEAUTY IN EXPERT HANDS</span>
+        <div class="decor-line-wrap">
+          <span class="decor-line"></span>
+          <span class="decor-sparkle">✦</span>
+          <span class="decor-line"></span>
+        </div>
+        <span class="decor-brand">A MORE CONFIDENT YOU</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. READY FOR YOUR BEAUTY DAY? (CTA BANNER) (MOCKUP 4)
+       ======================================================================== -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-image">
+          <img src="./assets/images/cta-flower.jpg" alt="Radiant Woman Holding Peony Flower">
+        </div>
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-title">
+            Ready for<br>Your Beauty Day?
+          </h2>
+          <p class="cta-banner-desc">
+            Book your appointment now and experience premium beauty care at Lumière.
+          </p>
+          <a href="https://wa.me/6285973729267?text=Halo%20Lumi%C3%A8re%20Beauty%20Studio!%20Saya%20ingin%20reservasi%20jadwal%20perawatan." target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+            Book via WhatsApp
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <div class="cta-banner-features">
+          <div class="cta-feature-item">
+            <div class="cta-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <span>Easy Booking</span>
+          </div>
+          <div class="cta-feature-item">
+            <div class="cta-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <span>Flexible Schedule</span>
+          </div>
+          <div class="cta-feature-item">
+            <div class="cta-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <span>Friendly Team</span>
+          </div>
+          <div class="cta-feature-item">
+            <div class="cta-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <span>Your Beauty, Our Priority</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. SITE FOOTER (MOCKUP 4)
+       ======================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand & Slogan -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-main">LUMIÈRE</span>
+            <span class="logo-sub">BEAUTY STUDIO</span>
+          </div>
+          <p class="footer-slogan">Beauty Lives in the Little Details.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.14 1 12 1 12s0 3.86.42 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.86 23 12 23 12s0-3.86-.46-5.58z"></path>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact & Visit Info -->
+        <div class="footer-contact-info">
+          <h4 class="footer-contact-title">Visit Us</h4>
+          <div class="footer-contact-row">
+            <span class="footer-contact-icon">📍</span>
+            <span>Jl. Melati No. 123, Bandung, Indonesia</span>
+          </div>
+          <div class="footer-contact-row">
+            <span class="footer-contact-icon">📞</span>
+            <span>+62 859 7372 9267</span>
+          </div>
+          <div class="footer-contact-row">
+            <span class="footer-contact-icon">⏰</span>
+            <span>Mon - Sat 09:00 - 20:00<br>Sunday 10:00 - 18:00</span>
+          </div>
+        </div>
+
+        <!-- Mini Interactive Map Preview -->
+        <div class="footer-map-card">
+          <iframe 
+            title="Lumière Beauty Studio Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.44976722886!2d107.57311654394982!3d-6.903444342205504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>© 2024 Lumière Beauty Studio. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <span>Designed with ♥ by <strong>ABYNS Studio</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       12. INTERACTIVE APPOINTMENT MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Book an Appointment</h3>
+        <button class="modal-close-btn" aria-label="Tutup Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="appointment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-name" class="form-label">Nama Lengkap</label>
+              <input type="text" id="book-name" class="form-input" placeholder="contoh: Jessica Tan" required>
+            </div>
+            <div class="form-group">
+              <label for="book-phone" class="form-label">Nomor WhatsApp</label>
+              <input type="tel" id="book-phone" class="form-input" placeholder="contoh: 085973729267" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="modal-service" class="form-label">Pilihan Layanan</label>
+              <select id="modal-service" class="form-select" required>
+                <option value="Hair Care">Hair Care (Cut, Coloring, Treatment)</option>
+                <option value="Skin Care">Skin Care (Facial, Acne, Glow)</option>
+                <option value="Nail Care">Nail Care (Manicure, Nail Art)</option>
+                <option value="Make Up">Make Up (Daily, Event, Bridal)</option>
+                <option value="Hair Removal">Hair Removal (Laser, Waxing)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="modal-specialist" class="form-label">Pilih Spesialis</label>
+              <select id="modal-specialist" class="form-select">
+                <option value="Bebas / Rekomendasi Salon">Bebas / Rekomendasi Salon</option>
+                <option value="Nadia Putri (Senior Hair Stylist)">Nadia Putri (Hair Stylist)</option>
+                <option value="Alya Rahma (Beauty Specialist)">Alya Rahma (Skin Specialist)</option>
+                <option value="Sabrina (Makeup Artist)">Sabrina (Makeup Artist)</option>
+                <option value="Dewi Lestari (Nail Artist)">Dewi Lestari (Nail Artist)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-date" class="form-label">Tanggal Reservasi</label>
+              <input type="date" id="book-date" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="book-time" class="form-label">Jam Kedatangan</label>
+              <select id="book-time" class="form-select" required>
+                <option value="10:00 WIB">10:00 WIB</option>
+                <option value="11:30 WIB">11:30 WIB</option>
+                <option value="13:00 WIB">13:00 WIB</option>
+                <option value="14:30 WIB">14:30 WIB</option>
+                <option value="16:00 WIB">16:00 WIB</option>
+                <option value="17:30 WIB">17:30 WIB</option>
+                <option value="19:00 WIB">19:00 WIB</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="book-notes" class="form-label">Catatan Tambahan (Opsional)</label>
+            <textarea id="book-notes" class="form-textarea" rows="2" placeholder="contoh: Ingin konsultasi warna rambut ash brown terlebih dahulu"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            Konfirmasi Reservasi via WhatsApp
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       13. SEARCH OVERLAY MODAL
+       ======================================================================== -->
+  <div class="search-modal" role="dialog" aria-modal="true" aria-label="Pencarian Layanan">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <input type="text" id="search-input" placeholder="Cari layanan (misal: facial, coloring, manicure, nail art)..." autocomplete="off">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position:absolute; right:16px; color:var(--color-primary);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       14. GALLERY LIGHTBOX MODAL
+       ======================================================================== -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Preview Foto Ruang Salon">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Tutup Preview Foto">&times;</button>
+      <img src="" alt="Lumière Space Full Preview">
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       15. FLOATING ACTIONS (WHATSAPP & BACK TO TOP)
+       ======================================================================== -->
+  <div class="floating-actions">
+    <!-- Floating Back to Top -->
+    <button class="float-btn float-top" aria-label="Kembali ke Atas">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6285973729267?text=Halo%20Lumi%C3%A8re%20Beauty%20Studio!%20Saya%20ingin%20tanya%20layanan%20salon." class="float-btn float-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-1.127-.061-.75-.241-1.636-.838-2.527-1.728-.908-.908-1.505-1.794-1.746-2.544-.138-.429-.106-.815-.061-1.127.05-.333.419-1.026.824-1.17.135-.048.281-.048.405-.016.14.036.27.185.342.333.19.387.643 1.57.7 1.686.057.117.068.225.006.351-.063.126-.144.225-.225.324-.09.108-.189.225-.27.324-.099.117-.207.243-.09.441.117.198.522.855 1.116 1.386.765.684 1.413.891 1.611.99.198.099.315.09.432-.045.117-.135.504-.585.639-.783.135-.198.27-.162.45-.099.18.063 1.143.54 1.341.639.198.099.333.144.378.225.045.081.045.477-.099.882z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/main.js?v=20260913z10"></script>
+</body>
+</html>
